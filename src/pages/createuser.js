@@ -1,7 +1,9 @@
 import React from "react";
 import axios from "axios";
-import Login from "./login";
+import Login from "../login";
 import ReactDOM from 'react-dom';
+import './createuser.css';
+
 export default class Createuser extends React.Component {
   state = {
     username: "",
@@ -53,12 +55,13 @@ export default class Createuser extends React.Component {
         } else if (result.data === "you are not authorized") {
           alert("you are not authorized")
           ReactDOM.render(<Login />, document.getElementById('root'));
-          
+
           // window.location.href = "index.html"
         }
         else {
           alert("customer created successfully")
           // ReactDOM.render(<Main />, document.getElementById('root'));
+          ReactDOM.render(<Login />, document.getElementById('root'));
 
           // window.location.href = "main.html"
         }
@@ -87,7 +90,7 @@ export default class Createuser extends React.Component {
           name :
           <input
             name="name"
-            type="name"
+            type="text"
             placeholder="name"
             value={this.state.name}
             // value="ohhyeah!"
@@ -98,6 +101,8 @@ export default class Createuser extends React.Component {
         <label>
           mobile :
           <input
+            type="text"
+          
             name="mobile"
             placeholder="mobile"
             value={this.state.mobile}
@@ -109,6 +114,8 @@ export default class Createuser extends React.Component {
         <label>
           address :
           <input
+            type="text"
+          
             name="address"
             placeholder="address"
             value={this.state.address}
@@ -121,6 +128,7 @@ export default class Createuser extends React.Component {
           extras :
           <input
             name="extras"
+            type="text"
             placeholder="extras"
             value={this.state.extras}
             // value="dkadmin"
