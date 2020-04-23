@@ -1,0 +1,49 @@
+body {
+    background-image: url("resource/2.jpg");
+    /* Full height */
+
+    background-repeat: no-repeat;
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+}
+
+button {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text], input[type=password] {
+    padding: 12px 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 4px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    /*border-collapse: collapse;*/
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+img:hover {
+    background-color: #a0ffb3;
+}   

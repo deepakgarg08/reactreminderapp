@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Login from "./login";
 import Createuser from "../src/pages/createuser";
+import Main from "./pages/main";
 
 class App extends Component {
   state = {
@@ -30,6 +31,8 @@ class App extends Component {
           
           {JSON.stringify(this.state.fields, null, 2)}
         </p>
+        <Main/>
+
       </div>
     );
   }

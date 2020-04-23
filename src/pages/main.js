@@ -2,10 +2,14 @@ import React from "react";
 import axios from "axios";
 import Login from "../login";
 import ReactDOM from 'react-dom';
+import './main.css'
+import Createuser from "../pages/createuser";
+import DeleteUser from "../pages/delete";
 
 export default class Main extends React.Component {
     add() {
-        // window.open("createuser.html", "_blank");
+        ReactDOM.render(<Createuser />, document.getElementById('root'));
+
     }
 
     update() {
@@ -18,6 +22,7 @@ export default class Main extends React.Component {
 
     }
     deleteCustomer() {
+        ReactDOM.render(<DeleteUser />, document.getElementById('root'));
 
     }
     displayList(data, i) {
@@ -50,7 +55,7 @@ export default class Main extends React.Component {
 
                     <div id="mainframe" />
 
-                    <table id="mainTable" class="mTable">
+                    <table id="mainTable" className="mTable">
                         <tr>
                             <th>Serial No.</th>
                             <th>UserName</th>

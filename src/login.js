@@ -61,6 +61,7 @@ export default class Login extends React.Component {
         <label>
           username :
           <input
+            type="text"
             name="username"
             placeholder="Username"
             value={this.state.username}
